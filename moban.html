@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+    }
+    #header>div{
+      width:100%;
+      height:80px;
+      background:#3C5368;
+      position:absolute;
+      top:71px;
+      left:0px;
+      z-index: -1;
+    }
+    #nav-top{
+      position:absolute;
+      left: 500px;
+      height:100%;
+      border-right:2px solid #2A3A49;
+    }
+    #game-logo{
+      position:absolute;
+      left: 350px;
+      top:20px;
+    }
+    ul{
+      list-style-type: none;
+      position: absolute;
+      left:550px;
+      top:10px;
+    }
+    li{
+      float: left;
+      padding: 8px 30px 8px 30px;
+    }
+    a{
+      color: #BDC5CC;
+      text-decoration-line: none;
+    }
+    #buy{
+      border:1px solid gray;
+      padding:5px 20px 5px;
+      background:white;
+      color:black;
+      font-size:14px;
+      border-radius:4px;
+    }
+  </style>
+</head>
+<header>
+  <iframe src="header.html" frameborder="0" width="100%"></iframe>
+</header>
+<body>
+  <div id="header">
+    <div>
+        <div id="game-logo"><img src="" alt=""></div>
+        <div id="nav">
+          <ul>
+            <li style="border-left:2px solid gray;height:100%;padding-left:50px;"><a href="#">Gallery</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#" id="buy">Steam Page!</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -4,6 +4,7 @@ body{
   font-family: Hind,Tahoma,sans-serif;
   font-size: 16px;
   line-height: 1.6em;
+  background: black;
 }
 #header>div{
   width:100%;
@@ -27,9 +28,6 @@ body{
 }
 ul{
   list-style-type: none;
-  position: absolute;
-  left:500px;
-  top:10px;
 }
 li{
   float: left;
@@ -71,6 +69,14 @@ a{
   top:200px;
   z-index: 4;
 }
+#buy-game{
+  color:black;
+  background:white;
+  font-size:16px;
+  padding:13px 40px 13px;
+  border-radius:3px;
+  font-weight:bold;
+}
 #floor-2{
   width: 100%;
   background-image: url(../img/Dont\ Starve/background.jpg);
@@ -110,4 +116,25 @@ h3{
 }
 span{
   color:#E4B16E;
+}
+#table{
+  position: absolute;
+  top:2400px;
+  left:20%;
+  background:black;
+  text-align: center;
+}
+td{
+  padding:8px;
+}
+#Purchase{
+  position: absolute;
+  top:3400px;
+  left:-6px;
+}
+#pur>ul>li{
+  padding:0 10px 0;
+}
+#pur{
+  text-align: center;
 }

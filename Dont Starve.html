@@ -8,31 +8,6 @@
   <link rel="stylesheet" href="css/Dont Starve.css">
 
   <style>
-    #other{
-      width: 100%;
-      position: absolute;
-      top:3800px;
-      text-align: center;
-    }
-    #other-games>p{
-      float: left;
-      padding:40px;
-    }
-    #footer{
-      width:100%;
-      height:200px;
-      position: absolute;
-      top:4400px;
-      color:white;
-      background-image: url(img/Dont\ Starve/orange_grain.jpg)
-    }
-    #foot{
-      width:100%;
-      height:300px;
-      position:absolute;
-      top:4700px;
-      left:0;
-    }
   </style>
 </head>
 <header>
@@ -54,13 +29,13 @@
   <div id="page">
     <!--                             head                      -->
     <div id="floor-1">
-      <div id="bg-1">
-        <img src="img/Dont Starve/dont-starvebackground.jpg" width="100%" alt="">
+      <div id="bg1">
+        <img src="img/Dont Starve/dont-starvebackground.jpg" width="110%" alt="">
       </div>
-      <div id="bg-2">
-        <img src="img/Dont Starve/dont-starvelayer4.png" width="100%" alt="">
+      <div id="bg2">
+        <img src="img/Dont Starve/dont-starvelayer4.png" width="110%" alt="">
       </div>
-      <div id="bg-3">
+      <div id="bg3">
         <img src="img/Dont Starve/dont-starvelayer2_0.png"  alt="">
       </div>
       <div id="title">
@@ -113,11 +88,9 @@
               <tr>
                 <td><img src="img/Dont Starve/ds08-exc.png" width="261px" height="261px" alt=""></td>
                 <td><img src="img/Dont Starve/ds06.png" width="261px" height="261px" alt=""></td>
-                <td></td>
-                <td></td>
               </tr>
             </table>
-            <p style="padding-top:40px;"><a href="#" style="color:white;border:2px solid white;padding:13px 50px 13px;">View all</a></p>
+            <p style="padding-top:40px;"><a href="#" id="tra">View all</a></p>
           </div>
     </div>
     <div id="floor-4">
@@ -178,5 +151,16 @@
         </footer>
       </div>
   </div>
+
+  <script>
+    document.onmousemove = function (e) {
+      e = e||window.event;
+      var x = 0.5-e.clientX/document.body.offsetWidth;
+      var y = 0.5-e.clientY/document.body.offsetHeight;
+      document.getElementById("bg3").style.transform = "translate("+x*40+"px,"+y*10+"px)";
+      document.getElementById("bg2").style.transform = "translate("+x*30+"px,"+y*7+"px)";
+      document.getElementById("bg1").style.transform = "translate("+x*40+"px,"+y*4+"px)";
+    }; 
+  </script>
 </body>
 </html>
